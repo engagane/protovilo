@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="log">
+          <a href="">Agane</a>
+        </div>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="hero">
+        <h4>Hay i three</h4>
+        <h1>I'M <span id="text"></span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, iste?</p>
+        <div class="social">
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+
+            <div class="icon">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+
+            </div>
+            <button>Donanload cv</button>
+
+           
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        var typed =new Typed("#text",{
+            strings:["UX/UI DESIGNER","UI DESIGNER","CODING","DIGITAL MARKETING"],
+            typeSpeed: 50
+            })
+            let menu =document.querySelector(".header ul")
+            let bars =document.querySelector(".header .fa-bars")
+            bars.addEventListener("click",function(){
+                menu.classList.toggle("show");
+            })
+    </script>
+  </body>
+</html>
